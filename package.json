@@ -1,0 +1,19 @@
+{ "name":"request.pipe",
+  "description":"pipe().pipe() request and response and router like connect.",
+  "tags":["request", "pipe", "http", "stream"],
+  "version":"0.0.1", "author":"Inaction <Inaction.me@gmail.com> http://inaction.me",
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/mxfli/request.pipe.git"
+  },
+  "bugs":{
+    "url":"https://github.com/mxfli/request.pipe/issues"
+  },
+  "dependencies":{
+    "iconv":">=1.1.x"
+  },
+  "engines":{
+    "node":">= 0.6.x < 0.7.0"
+  },
+  "main":"index"
+}
