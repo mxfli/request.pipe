@@ -27,7 +27,7 @@ StreamIconv.prototype.write = function (data) {
   //TODO(Inaction) less memory useage mode,add real stream convert.
   this.buffers.push(data);
   this.length += data.length;
-  logger.log('debug', 'Total data lenth:', this.length);
+  logger.debug('Total data lenth:', this.length);
 };
 
 StreamIconv.prototype.end = function () {
@@ -45,7 +45,7 @@ StreamIconv.prototype.end = function () {
 };
 
 exports.createIconvStream = function (inputEncoding, outputEncoding) {
-  logger.log('Create Iconv Stream.', inputEncoding, 'to', outputEncoding);
+  logger.info('Create Iconv Stream.', inputEncoding, 'to', outputEncoding);
   var iconv = new Iconv(inputEncoding, outputEncoding + '//IGNORE');
   return new StreamIconv(iconv.convert.bind(iconv));
 };

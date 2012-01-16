@@ -5,6 +5,6 @@
  * Description:
  *      Description of index.js
  */
-var requestPipe = require('lib/request.pipe.js');
+var requestPipe = require('./lib/request.pipe.js');
 
 exports['request.pipe'] = requestPipe;
